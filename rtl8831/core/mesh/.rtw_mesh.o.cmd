@@ -1,0 +1,43 @@
+cmd_/home/gene/rtl8831/core/mesh/rtw_mesh.o := gcc -Wp,-MMD,/home/gene/rtl8831/core/mesh/.rtw_mesh.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mfunction-return=thunk-extern -fno-jump-tables -I./arch/x86/xenomai/include -I./arch/x86/xenomai/dovetail/include -I./include/xenomai -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -O1 -Wno-unused-variable -Wno-unused-label -Wno-unused -Wno-date-time -DRTW_NETWORK_LINK_MAX=3 -DDTYPE=DEV_TYPE_LEGACY -DCONFIG_MP_INCLUDED -DCONFIG_CMD_DISP -DCONFIG_PHL_TEST_SUITE -DCONFIG_POWER_SAVE -DCONFIG_BTC -DCONFIG_WIFI_6 -DCONFIG_EFUSE_CONFIG_FILE -DEFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_8851bu.map\" -DWIFIMAC_PATH=\"/data/wifimac.txt\" -DCONFIG_LOAD_PHY_PARA_FROM_FILE -DREALTEK_CONFIG_PATH=\"/lib/firmware/\" -DCONFIG_TXPWR_BY_RATE=1 -DCONFIG_TXPWR_BY_RATE_EN=1 -DCONFIG_TXPWR_LIMIT=1 -DCONFIG_TXPWR_LIMIT_EN=0 -DCONFIG_RTW_EDCCA_MODE_SEL=0 -DCONFIG_80211D -DCONFIG_RTW_COUNTRY_IE_SLAVE_EN_MODE=0 -DCONFIG_RTW_COUNTRY_IE_SLAVE_FLAGS=0x01 -DCONFIG_IEEE80211W -DCONFIG_LAYER2_ROAMING -DCONFIG_ROAMING_FLAG=0x3 -DHIGH_ACTIVE_HST2DEV=0 -DCONFIG_BR_EXT '-DCONFIG_BR_EXT_BRNAME="'br0'"' -DCONFIG_RTW_NAPI -DCONFIG_RTW_GRO -DCONFIG_RTW_NETIF_SG -DCONFIG_RTW_DEBUG -DRTW_LOG_LEVEL=4 -DRTW_PHL_LOG_LEVEL=4 -DCONFIG_PROC_DEBUG -DCONFIG_RTW_UP_MAPPING_RULE=0 -DPLATFORM_LINUX -DUSE_TRUE_PHY -DCONFIG_DBG_AX_CAM -DCONFIG_RTW_MBO -DCONFIG_RTW_WNM -DCONFIG_RTW_BTM_ROAM -DCONFIG_RTW_80211K -DCONFIG_RTW_80211R -DRTW_FT_DBG=0 -DRTW_WNM_DBG=0 -DRTW_MBO_DBG=0 -DCONFIG_LITTLE_ENDIAN -DCONFIG_IOCTL_CFG80211 -DRTW_USE_CFG80211_STA_EVENT -DCONFIG_RADIO_WORK -DPHL_PLATFORM_LINUX -DCONFIG_PHL_ARCH -DRTW_PHL_RX -DRTW_PHL_TX -DRTW_PHL_BCN -DDIRTY_FOR_WORK -DCONFIG_RTL8851B -I/home/gene/rtl8831//include -I/home/gene/rtl8831//platform -I/home/gene/rtl8831//core/crypto -I/home/gene/rtl8831//phl/hal_g6    -fsanitize=bounds  -fsanitize=shift  -fsanitize=integer-divide-by-zero  -fsanitize=unreachable  -fsanitize=signed-integer-overflow  -fsanitize=bool  -fsanitize=enum  -Wno-maybe-uninitialized  -DMODULE  -DKBUILD_BASENAME='"rtw_mesh"' -DKBUILD_MODNAME='"8851bu"' -c -o /home/gene/rtl8831/core/mesh/rtw_mesh.o /home/gene/rtl8831//core/mesh/rtw_mesh.c
+
+source_/home/gene/rtl8831/core/mesh/rtw_mesh.o := /home/gene/rtl8831//core/mesh/rtw_mesh.c
+
+deps_/home/gene/rtl8831/core/mesh/rtw_mesh.o := \
+    $(wildcard include/config/rtw/mesh.h) \
+    $(wildcard include/config/ieee80211w.h) \
+    $(wildcard include/config/rtw/mesh/acnode/prevent.h) \
+    $(wildcard include/config/rtw/mesh/cto/mgate/blacklist.h) \
+    $(wildcard include/config/rtw/macaddr/acl.h) \
+    $(wildcard include/config/rtw/mesh/peer/blacklist.h) \
+    $(wildcard include/config/ioctl/cfg80211.h) \
+    $(wildcard include/config/rtw/mesh/offch/cand.h) \
+    $(wildcard include/config/concurrent/mode.h) \
+    $(wildcard include/config/rtw/mpm/tx/ies/sync/bss.h) \
+    $(wildcard include/config/rtw/mesh/aek.h) \
+    $(wildcard include/config/rtw/mesh/driver/aid.h) \
+    $(wildcard include/config/rts/full/bw.h) \
+    $(wildcard include/config/rtw/token/based/xmit.h) \
+    $(wildcard include/config/rtw/mesh/sta/del/disasoc.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/slab.h) \
+    $(wildcard include/config/rtw/mesh/add/root/chk.h) \
+    $(wildcard include/config/rtw/mesh/data/bmc/to/uc.h) \
+  include/linux/kconfig.h \
+    $(wildcard include/config/cc/version/text.h) \
+    $(wildcard include/config/cpu/big/endian.h) \
+    $(wildcard include/config/booger.h) \
+    $(wildcard include/config/foo.h) \
+  include/linux/compiler_types.h \
+    $(wildcard include/config/have/arch/compiler/h.h) \
+    $(wildcard include/config/enable/must/check.h) \
+    $(wildcard include/config/cc/has/asm/inline.h) \
+  include/linux/compiler_attributes.h \
+  include/linux/compiler-gcc.h \
+    $(wildcard include/config/arm64.h) \
+    $(wildcard include/config/retpoline.h) \
+    $(wildcard include/config/arch/use/builtin/bswap.h) \
+    $(wildcard include/config/kcov.h) \
+
+/home/gene/rtl8831/core/mesh/rtw_mesh.o: $(deps_/home/gene/rtl8831/core/mesh/rtw_mesh.o)
+
+$(deps_/home/gene/rtl8831/core/mesh/rtw_mesh.o):

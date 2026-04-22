@@ -1,0 +1,1 @@
+cmd_/home/gene/rtl8831/8851bu.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/gene/rtl8831/8851bu.ko /home/gene/rtl8831/8851bu.o /home/gene/rtl8831/8851bu.mod.o;  true
